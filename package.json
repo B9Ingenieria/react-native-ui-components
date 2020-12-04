@@ -1,6 +1,6 @@
 {
   "name": "@b9/react-native-ui-components",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "description": "React Native UI Components",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
