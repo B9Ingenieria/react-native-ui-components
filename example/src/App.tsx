@@ -1,17 +1,22 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import UiComponents from 'react-native-ui-components';
+import { StyleSheet, View } from 'react-native';
+import BetterPicker from '../../src/BetterPicker';
+import { Picker } from '@react-native-community/picker';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    UiComponents.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <BetterPicker
+        selectedValue={'123'}
+        style={{ borderColor: 'white' }}
+        onValueChange={() => null}
+        data-test="select_nivel"
+      >
+        {[
+          <Picker.Item key={'K123'} label={'Descripcion 123'} value={'123'} />,
+          <Picker.Item key={'K124'} label={'Descripcion 124'} value={'124'} />,
+        ]}
+      </BetterPicker>
     </View>
   );
 }
