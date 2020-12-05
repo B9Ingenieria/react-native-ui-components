@@ -1,21 +1,53 @@
-# react-native-ui-components
+# @b9/react-native-ui-components
 
 React Native UI Components
 
 ## Installation
 
 ```sh
-npm install react-native-ui-components
+yarn add @b9/react-native-ui-components
 ```
 
 ## Usage
 
 ```js
-import UiComponents from "react-native-ui-components";
+import {BetterPicker} from "@b9/react-native-ui-components";
+```
 
-// ...
+Create array options which will be used by BetterPicker
 
-const result = await UiComponents.multiply(3, 7);
+```sh
+const options=[{"id":"1","name":"One"},{"id":"2","name":"Two"},{"id":"3","name":"Three"}]
+```
+
+
+Create value which will be used by BetterPicker
+
+```sh
+const [value,setValue]=useState(options[0].name)
+```
+
+```js
+   <View style={styles.selectorContainer}>
+      <BetterPicker
+            selectedValue={value}
+            style={{
+              width:250,
+              fontSize: 12,
+            }}
+            onValueChange={(itemValue, itemIndex) => setValue(itemValue)}
+          >
+          {_.map(options, (option: object) => {
+              return (
+                <Picker.Item
+                  key={option.id}
+                  label={option.name}
+                  value={option.name}
+                />
+              );
+            })}
+          </BetterPicker>
+    </View>
 ```
 
 ## Contributing
