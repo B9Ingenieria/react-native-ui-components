@@ -7,9 +7,8 @@ import {
   StyleSheet,
   Modal,
 } from 'react-native';
-import { ListItem } from 'react-native-elements';
+import { Icon, ListItem } from 'react-native-elements';
 import { ScrollView } from 'react-native-gesture-handler';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import type { PickerItemProps, PickerProperties } from './index';
 
 export default function BetterPicker(props: PickerProperties): JSX.Element {
@@ -51,7 +50,7 @@ export default function BetterPicker(props: PickerProperties): JSX.Element {
             {selectedItem.label}
           </Text>
           <View style={styles.icon}>
-            <Icon name="chevron-down" />
+            <Icon name="arrow-drop-down" />
           </View>
         </View>
       </TouchableHighlight>
