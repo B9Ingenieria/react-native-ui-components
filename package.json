@@ -1,6 +1,6 @@
 {
   "name": "@b9/react-native-ui-components",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "React Native UI Components",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -51,6 +51,7 @@
     "@types/jest": "^26.0.0",
     "@types/react": "^16.9.19",
     "@types/react-native": "0.62.13",
+    "@types/lodash": "^4.14.165",
     "commitlint": "^8.3.5",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -64,14 +65,19 @@
     "react-native-gesture-handler": "~1.7.0",
     "react-test-renderer": "^17.0.1",
     "release-it": "^13.5.8",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "@react-native-picker/picker": "^1.9.1",
+    "react-native-elements": "^3.0.0-alpha.1",
+    "react-native-vector-icons": "^6.4.6"
   },
   "peerDependencies": {
     "lodash": "*",
     "react": "*",
     "react-native": "*",
     "react-native-elements": "*",
-    "react-native-gesture-handler": "*"
+    "react-native-gesture-handler": "*",
+    "@react-native-picker/picker": "*",
+    "react-native-vector-icons": "*"
   },
   "jest": {
     "preset": "react-native",
@@ -145,11 +151,5 @@
       "module",
       "typescript"
     ]
-  },
-  "dependencies": {
-    "@react-native-community/picker": "^1.6.6",
-    "@types/lodash": "^4.14.165",
-    "react-native-elements": "^3.0.0-alpha.1",
-    "react-native-vector-icons": "^6.4.6"
   }
 }

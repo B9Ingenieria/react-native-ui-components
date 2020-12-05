@@ -1,10 +1,10 @@
 {
   "name": "react-native-ui-components-example",
-  "displayName": "UiComponents Example",
+  "displayName": "ReactNativeUIComponents Example",
   "expo": {
     "name": "react-native-ui-components-example",
     "slug": "react-native-ui-components-example",
-    "description": "Example app for react-native-ui-components",
+    "description": "Example app for @b9/react-native-ui-components",
     "privacy": "public",
     "version": "1.0.0",
     "platforms": [
