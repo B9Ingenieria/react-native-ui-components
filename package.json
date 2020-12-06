@@ -36,7 +36,7 @@
   ],
   "repository": "https://github.com/B9Ingenieria/react-native-ui-components.git",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "author": "B9 Ingeniería <daniela@b9.cl> (https://www.b9.cl)",
   "license": "MIT",
