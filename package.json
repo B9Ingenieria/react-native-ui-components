@@ -34,13 +34,16 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/B9Ingeneria/react-native-ui-components",
+  "repository": "https://github.com/B9Ingenieria/react-native-ui-components.git",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "author": "B9 Ingeniería <daniela@b9.cl> (https://www.b9.cl)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/B9Ingeneria/react-native-ui-components/issues"
+    "url": "https://github.com/B9Ingenieria/react-native-ui-components/issues"
   },
-  "homepage": "https://github.com/B9Ingeneria/react-native-ui-components#readme",
+  "homepage": "https://github.com/B9Ingenieria/react-native-ui-components#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
