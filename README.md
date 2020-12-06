@@ -2,6 +2,9 @@
 
 React Native UI Components
 
+[![B9 Ingeniería](https://circleci.com/gh/B9Ingenieria/react-native-ui-components.svg?style=svg)](https://app.circleci.com/pipelines/github/B9Ingenieria/react-native-ui-components)
+
+
 ## Installation
 
 ```sh
