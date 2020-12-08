@@ -1,6 +1,6 @@
 {
   "name": "@b9/react-native-ui-components",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "React Native UI Components",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -34,21 +34,28 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/B9Ingeneria/react-native-ui-components",
+  "repository": "https://github.com/B9Ingenieria/react-native-ui-components.git",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "author": "B9 Ingeniería <daniela@b9.cl> (https://www.b9.cl)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/B9Ingeneria/react-native-ui-components/issues"
+    "url": "https://github.com/B9Ingenieria/react-native-ui-components/issues"
   },
-  "homepage": "https://github.com/B9Ingeneria/react-native-ui-components#readme",
+  "homepage": "https://github.com/B9Ingenieria/react-native-ui-components#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@react-native-community/picker": "^1.6.6",
+    "@react-native-community/toolbar-android": "^0.1.0-rc.2",
+    "@react-native-picker/picker": "^1.9.1",
     "@release-it/conventional-changelog": "^1.1.4",
     "@testing-library/jest-native": "^3.4.3",
     "@testing-library/react-native": "^7.1.0",
     "@types/jest": "^26.0.0",
+    "@types/lodash": "^4.14.165",
     "@types/react": "^16.9.19",
     "@types/react-native": "0.62.13",
     "commitlint": "^8.3.5",
@@ -61,17 +68,24 @@
     "prettier": "^2.0.5",
     "react": "16.11.0",
     "react-native": "0.62.2",
+    "react-native-elements": "^3.0.0-alpha.1",
     "react-native-gesture-handler": "~1.7.0",
+    "react-native-vector-icons": "^6.4.6",
     "react-test-renderer": "^17.0.1",
     "release-it": "^13.5.8",
+    "standard-version": "^9.0.0",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
+    "@react-native-community/picker": "*",
+    "@react-native-community/toolbar-android": "*",
+    "@react-native-picker/picker": "*",
     "lodash": "*",
     "react": "*",
     "react-native": "*",
     "react-native-elements": "*",
-    "react-native-gesture-handler": "*"
+    "react-native-gesture-handler": "*",
+    "react-native-vector-icons": "*"
   },
   "jest": {
     "preset": "react-native",
@@ -146,10 +160,10 @@
       "typescript"
     ]
   },
-  "dependencies": {
-    "@react-native-community/picker": "^1.6.6",
-    "@types/lodash": "^4.14.165",
-    "react-native-elements": "^3.0.0-alpha.1",
-    "react-native-vector-icons": "^6.4.6"
+  "standard-version": {
+    "header": "# Changelog\n\n",
+    "bumpFiles": [
+      "package.json"
+    ]
   }
 }

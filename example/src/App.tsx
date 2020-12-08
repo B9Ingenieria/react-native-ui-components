@@ -1,18 +1,14 @@
 import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-import { BetterPicker } from '@b9/react-native-ui-components';
+import BetterPicker from '../../src/BetterPicker';
 import { Picker } from '@react-native-community/picker';
 
 export default function App() {
   const [value, setValue] = React.useState('One');
 
-  const onChangeValue = (value: string) => {
-    setValue(value);
-  };
-
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>The selected option is {value}!</Text>
+      <Text style={styles.text}>The selected value is {value}!</Text>
       <View style={styles.selectorContainer}>
         <BetterPicker
           selectedValue={value}
@@ -21,11 +17,13 @@ export default function App() {
             fontSize: 12,
             borderColor: 'white',
           }}
-          onValueChange={(itemValue: string) => onChangeValue(itemValue)}
+          onValueChange={(itemValue: string | number) =>
+            setValue(String(itemValue))
+          }
         >
-          <Picker.Item key={'1'} label={'One'} value={'One'} />
-          <Picker.Item key={'2'} label={'Two'} value={'Two'} />
-          <Picker.Item key={'3'} label={'Three'} value={'Three'} />
+          <Picker.Item key={'K1'} label={'Label One'} value={'One'} />
+          <Picker.Item key={'K2'} label={'Label Two'} value={'Two'} />
+          <Picker.Item key={'K3'} label={'Label Three'} value={'Three'} />
         </BetterPicker>
       </View>
     </View>
