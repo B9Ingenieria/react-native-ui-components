@@ -6,8 +6,8 @@ React Native UI Components
 
 | Android | iOS | Web |
 | --- | --- | --- |
-| <img src="./example/screenshots/android.png" width="150"> | <img src="./example/screenshots/ios.png" width="150"> | <img src="./example/screenshots/web.png" width="150"> |
-| <img src="./example/screenshots/picker-android.png" width="300"> | <img src="./example/screenshots/picker-ios.png" width="300"> |<img src="./example/screenshots/picker-web.png" width="300">
+| <img src="./screenshots/android.png" width="150"> | <img src="./screenshots/ios.png" width="150"> | <img src="./screenshots/web.png" width="150"> |
+| <img src="./screenshots/picker-android.png" width="300"> | <img src="./screenshots/picker-ios.png" width="300"> |<img src="./screenshots/picker-web.png" width="300">
 
 ## Installation
 
@@ -16,6 +16,10 @@ yarn add @b9/react-native-ui-components
 ```
 
 ## Usage
+
+### Better Picker
+
+This component is a wrapper of [react-native-community-picker](https://www.npmjs.com/package/@react-native-community/picker), the behaviour is the same except for iOS where the UI has been changed to mimic Android and Web.
 
 ```js
 import {BetterPicker} from "@b9/react-native-ui-components";
