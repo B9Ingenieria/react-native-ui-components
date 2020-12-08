@@ -1,22 +1,33 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
-import BetterPicker from '../../src/BetterPicker';
+import { Text, View, StyleSheet } from 'react-native';
+import { BetterPicker } from '@b9/react-native-ui-components';
 import { Picker } from '@react-native-community/picker';
 
 export default function App() {
+  const [value, setValue] = React.useState('One');
+
+  const onChangeValue = (value: string) => {
+    setValue(value);
+  };
+
   return (
     <View style={styles.container}>
-      <BetterPicker
-        selectedValue={'123'}
-        style={{ borderColor: 'white' }}
-        onValueChange={() => null}
-        data-test="select_nivel"
-      >
-        {[
-          <Picker.Item key={'K123'} label={'Descripcion 123'} value={'123'} />,
-          <Picker.Item key={'K124'} label={'Descripcion 124'} value={'124'} />,
-        ]}
-      </BetterPicker>
+      <Text style={styles.text}>The selected option is {value}!</Text>
+      <View style={styles.selectorContainer}>
+        <BetterPicker
+          selectedValue={value}
+          style={{
+            width: 240,
+            fontSize: 12,
+            borderColor: 'white',
+          }}
+          onValueChange={(itemValue: string) => onChangeValue(itemValue)}
+        >
+          <Picker.Item key={'1'} label={'One'} value={'One'} />
+          <Picker.Item key={'2'} label={'Two'} value={'Two'} />
+          <Picker.Item key={'3'} label={'Three'} value={'Three'} />
+        </BetterPicker>
+      </View>
     </View>
   );
 }
@@ -24,7 +35,22 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#CFE7FB',
+    padding: 8,
+  },
+  selectorContainer: {
+    width: 250,
+    height: 30,
+    borderColor: 'green',
+    borderWidth: 1,
+    justifyContent: 'center',
+    backgroundColor: 'white',
+  },
+  text: {
+    fontSize: 20,
+    color: 'green',
+    marginBottom: 100,
   },
 });
