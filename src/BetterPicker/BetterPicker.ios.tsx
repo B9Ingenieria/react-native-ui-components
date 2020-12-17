@@ -21,6 +21,8 @@ export default function BetterPicker(props: PickerProperties): JSX.Element {
     key: '',
   });
 
+  const buttonStyle = [styles.button, { color: 'black' }];
+
   useEffect(() => {
     const item = _.find(options, (option: PickerItemProps) => {
       return String(option.value) === String(selectedValue);
@@ -46,9 +48,7 @@ export default function BetterPicker(props: PickerProperties): JSX.Element {
     <View>
       <TouchableHighlight onPress={() => setSelectorVisible(true)}>
         <View style={styles.row}>
-          <Text style={[styles.button, { color: 'black' }]}>
-            {selectedItem.label}
-          </Text>
+          <Text style={buttonStyle}>{selectedItem.label}</Text>
           <View style={styles.icon}>
             <Icon name="arrow-drop-down" />
           </View>

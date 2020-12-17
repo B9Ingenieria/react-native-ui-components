@@ -1,4 +1,4 @@
-import { Picker } from 'react-native';
+import { Picker } from '@react-native-community/picker';
 import React from 'react';
 import type { PickerProperties } from './index';
 
