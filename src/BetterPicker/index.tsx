@@ -7,7 +7,7 @@ export type ItemValue = number | string;
 export interface PickerProperties extends ViewProps {
   children: JSX.Element[];
   selectedValue: ItemValue;
-  onValueChange: (itemValue: ItemValue) => void;
+  onValueChange: (itemValue: ItemValue, itemIndex?: number) => void;
   style?: StyleProp<TextStyle>;
 }
 
