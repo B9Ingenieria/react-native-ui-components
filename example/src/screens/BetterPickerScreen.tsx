@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import BetterPicker from '../../../src/BetterPicker';
-import { Picker } from '@react-native-community/picker';
+import { Picker } from '@react-native-picker/picker';
 
 export default function BetterPickerScreen() {
   const [value, setValue] = React.useState('One');
