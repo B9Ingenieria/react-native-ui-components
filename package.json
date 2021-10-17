@@ -72,7 +72,7 @@
     "react-native-vector-icons": "^6.4.6",
     "react-test-renderer": "^17.0.1",
     "release-it": "^13.5.8",
-    "standard-version": "^9.0.0",
+    "semantic-release": "^18.0.0",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
@@ -162,12 +162,6 @@
       "commonjs",
       "module",
       "typescript"
-    ]
-  },
-  "standard-version": {
-    "header": "# Changelog\n\n",
-    "bumpFiles": [
-      "package.json"
     ]
   },
   "dependencies": {
