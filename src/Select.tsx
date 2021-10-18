@@ -1,4 +1,4 @@
-import { Picker } from '@react-native-community/picker';
+import { Picker } from '@react-native-picker/picker';
 import _ from 'lodash';
 import React, { useState } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
